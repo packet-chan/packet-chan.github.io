@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <!-- プライバシーポリシー専用のスタイルシートを読み込む場合 -->
+  <link rel="stylesheet" href="{{ '/assets/css/privacy.css' | relative_url }}">
+</head>
+<body>
+  <!-- ブログ用のナビゲーションやヘッダーは含めない -->
+  <main>
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+  <!-- フッターもシンプルに、もしくは省略 -->
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}.</p>
+  </footer>
+</body>
+</html>

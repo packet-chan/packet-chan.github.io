@@ -1,7 +1,7 @@
 ---
-layout: page       # 使用するレイアウト。_layouts/page.html が使われます（存在しない場合はテーマのデフォルトが適用されます）
+layout: privacy       # 使用するレイアウト。_layouts/page.html が使われます（存在しない場合はテーマのデフォルトが適用されます）
 title: プライバシーポリシー
-permalink: /privacy-policy/   # ページのURL。例: https://yourusername.github.io/privacy-policy/
+permalink: /privacypolicy/   # ページのURL。例: https://yourusername.github.io/privacy-policy/
 ---
 
 Privacy Policy This privacy policy applies to the 「見えない」まるばつゲーム app (hereby referred to as “Application”) for mobile devices that was created by Packet-Chan (hereby referred to as “Service Provider”) as a Free service. This service is intended for use “AS IS”.
