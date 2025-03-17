@@ -1,0 +1,300 @@
+---
+---
+
+/*==================================================
+  LIGHT & SIMPLE THEME CSS
+  シンプルでおしゃれなライトテーマです
+==================================================*/
+
+/*--------------------------------------------------
+  1. リセットとボックスサイズの設定
+  全要素のマージン・パディングをリセットし、ボックスサイズをborder-boxに設定
+--------------------------------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------------------
+  2. ベーススタイル
+  htmlは基本フォントサイズとスムーズスクロールを設定
+--------------------------------------------------*/
+html {
+  font-size: 100%; /* 約16px前後 */
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------
+  3. ボディスタイル
+  背景を白、文字色をダークグレーに変更
+--------------------------------------------------*/
+body {
+  font-family: 'Montserrat', sans-serif;  /* モダンなフォント */
+  font-weight: 400;
+  font-size: 1rem;        /* 16px相当 */
+  line-height: 1.6;
+  color: #333333;         /* 文字色：ダークグレー */
+  background-color: #ffffff; /* 背景色：白 */
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/*--------------------------------------------------
+  4. タイポグラフィと余白設定
+  見出し、段落、リストなどに統一の余白を与える
+--------------------------------------------------*/
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, ul, ol, dl, figure {
+  margin-bottom: 1.5rem;
+}
+
+/*--------------------------------------------------
+  5. 見出しのスタイル
+  色やサイズをライトテーマ用に調整
+--------------------------------------------------*/
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111111;  /* 非常に濃いグレー */
+  letter-spacing: -0.05em;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222222;
+}
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333333;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #444444;
+}
+
+/*--------------------------------------------------
+  6. リンクのスタイル
+  シンプルなブルーを使用し、ホバー時に下線を付与
+--------------------------------------------------*/
+a {
+  color: #007acc;  /* ブルー */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover,
+a:focus {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/*--------------------------------------------------
+  7. 画像とフィギュアのスタイル
+  画像は丸みと控えめな影を付与
+--------------------------------------------------*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* 控えめな影 */
+}
+figure {
+  margin: 0;
+}
+figcaption {
+  font-size: 0.875rem;
+  color: #666666;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/*--------------------------------------------------
+  8. リストのスタイル
+  リストマーカーをシンプルなドットに変更
+--------------------------------------------------*/
+ul, ol {
+  list-style: none;
+  padding-left: 1rem;
+}
+ul li::before {
+  content: "•";
+  color: #333333;
+  padding-right: 0.5rem;
+}
+
+/*--------------------------------------------------
+  9. 引用のスタイル
+  シンプルな左ボーダーと余白で引用を強調
+--------------------------------------------------*/
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #cccccc;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #555555;
+}
+
+/*--------------------------------------------------
+  10. コードのスタイル
+  インラインコードとコードブロックのデザインを調整
+--------------------------------------------------*/
+/* インラインコードのスタイル */
+code {
+    font-family: 'Fira Code', monospace;  /* モノスペースフォントでコードらしさを強調 */
+    font-size: 1em;                      /* インライン要素なのでサイズを調整 */
+    color: #ffffff;                      /* 白文字 */
+    background-color: #000000;           /* 黒背景 */
+    padding: 0.2rem 0.4rem;              /* 内側の余白で目立たせる */
+    border-radius: 4px;                  /* 柔らかい角丸 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* 影を追加して立体感を演出 */
+  }
+  
+  /* コードブロックのスタイル */
+  pre {
+    background-color: rgb(0,0,0);           /* 黒背景 */
+    color: #ffffff;                      /* 白文字 */
+    font-family: 'Fira Code', monospace; /* モノスペースフォント */
+    font-size: 1em;                      /* 標準的なサイズ */
+    line-height: 1.5;                    /* 行間を広くして読みやすく */
+    padding: 1.5rem;                     /* 十分な余白で視認性を向上 */
+    border-radius: 8px;                  /* 角丸でモダンな印象に */
+    overflow-x: auto;                    /* 横スクロールを許容 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* リッチな影でブロックを浮き上がらせる */
+    border: 1px solid #333333;           /* 薄いボーダーで境界を明確に */
+  }
+
+/*--------------------------------------------------
+  11. テーブルのスタイル
+  シンプルな境界線と背景色でテーブルを整形
+--------------------------------------------------*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+th, td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+th {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/*--------------------------------------------------
+  12. コンテンツラッパー
+  ページ全体を中央寄せし、最大幅を設定
+--------------------------------------------------*/
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/*--------------------------------------------------
+  13. ヘッダー、ナビゲーション、フッターのスタイル
+--------------------------------------------------*/
+/* ヘッダー */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #dddddd;
+}
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+}
+/* ナビゲーション */
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.site-nav .page-link {
+  font-size: 1rem;
+  color: #007acc;
+}
+/* フッター */
+.site-footer {
+  padding: 2rem 0;
+  border-top: 1px solid #dddddd;
+  text-align: center;
+  color: #999999;
+  font-size: 0.9rem;
+}
+
+/*--------------------------------------------------
+  14. 投稿とコンテンツエリアのスタイル
+--------------------------------------------------*/
+.page-content {
+  flex: 1;
+  padding: 2rem 0;
+}
+.post-header {
+  margin-bottom: 2rem;
+}
+.post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 0.5rem;
+}
+.post-meta {
+  font-size: 0.9rem;
+  color: #666666;
+}
+.post-content h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+}
+.post-content h3 {
+  font-size: 1.5rem;
+  margin-top: 1.75rem;
+}
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+/*--------------------------------------------------
+  15. レスポンシブデザイン
+--------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 85%;
+  }
+  .post-title {
+    font-size: 2rem;
+  }
+}
+
+/*==================================================
+  END OF LIGHT & SIMPLE THEME CSS
+==================================================*/
