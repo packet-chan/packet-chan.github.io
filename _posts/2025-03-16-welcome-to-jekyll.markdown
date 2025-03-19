@@ -1,8 +1,6 @@
 ---
 layout: post
-title: "自己紹介: 生物学から情報科学への挑戦"
+title: "Test"
 date: 2025-03-16 20:11:28 +0900
-categories: 自己紹介 転向 情報科学
+categories: 
 ---
-
-はじめまして。  
