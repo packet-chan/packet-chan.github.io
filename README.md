@@ -12,4 +12,4 @@ For future apps, use `/apps/<unique-app-slug>/` and keep their files in matching
 
 Only public static content belongs here. Never add signing keys, passwords, service-account files, production secrets, or private development builds. A hidden link, an obscure URL, or robots.txt does not provide access control. Services requiring authentication belong on a host that enforces authentication.
 
-The privacy_policy repository history was merged into this repository under `privacy_policy/`. Maintain the policy here going forward. The old repository is retained only for historical reference; its separate Pages publishing is disabled after migration.
+The privacy_policy repository history was merged into this repository under `privacy_policy/`. Maintain the policy here going forward. The superseded standalone repository has been removed after migration. Only the current policy is published.
